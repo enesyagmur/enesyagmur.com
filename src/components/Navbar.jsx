@@ -25,11 +25,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <a
-          href="#top"
-          className="font-display text-xl tracking-wide text-bone uppercase"
-        >
-          Enes<span className="text-brass">.</span>
+        <a href="#top" className="flex items-center">
+          <img src="/logo.png" alt="Enes logo" className="h-9 w-auto" />
         </a>
 
         <ul className="hidden md:flex items-center gap-2">
