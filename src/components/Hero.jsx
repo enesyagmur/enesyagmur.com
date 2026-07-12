@@ -1,4 +1,9 @@
-const TAGS = ["E-TİCARET", "İÇERİK & VİDEO", "FRONTEND", "MÜŞTERİ DENEYİMİ"];
+const TAGS = [
+  "E-TİCARET",
+  "SOSYAL MEDYA",
+  "FRONTEND WEB GELİŞTİRME",
+  "MÜŞTERİ HİZMETLERİ",
+];
 
 export default function Hero() {
   return (
