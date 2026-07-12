@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="iletisim" className="pegboard-bg">
+    <section id="iletisim" className="pegboard-bg bg-panel">
       <div className="max-w-6xl mx-auto px-6 py-24">
         <div className="grid md:grid-cols-2 gap-14">
           <div>
@@ -52,11 +52,8 @@ export default function Contact() {
 
           <form
             className="space-y-4"
-            onSubmit={(e) => {
-              e.preventDefault();
-              // TODO: Formspree/EmailJS gibi bir servise bağla
-              alert("Form gönderimi henüz bir servise bağlanmadı.");
-            }}
+            action="https://formspree.io/f/xgogewer"
+            method="POST"
           >
             <div>
               <label
