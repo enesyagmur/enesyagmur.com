@@ -18,9 +18,8 @@ export default function Contact() {
             </p>
 
             <div className="mt-8 space-y-3 font-mono text-sm">
-              {/* Kendi bilgilerinle güncelle */}
               <a
-                href="mailto:mail@adresin.com"
+                href="mailto:enesyagmuroffical@gmail.com"
                 className="block text-bone hover:text-brass transition-colors"
               >
                 enesyagmuroffical@gmail.com
@@ -42,7 +41,7 @@ export default function Contact() {
                 github.com/enesyagmur
               </a>
               <a
-                href="#"
+                href="tel:+905458681696"
                 className="block text-sage hover:text-brass transition-colors"
               >
                 +90 545 868 16 96
@@ -64,6 +63,7 @@ export default function Contact() {
               </label>
               <input
                 id="name"
+                name="name"
                 type="text"
                 required
                 className="mt-2 w-full bg-panel border border-line rounded-sm px-4 py-3 text-bone placeholder:text-sage/50 focus:border-brass outline-none"
@@ -79,6 +79,7 @@ export default function Contact() {
               </label>
               <input
                 id="email"
+                name="email"
                 type="email"
                 required
                 className="mt-2 w-full bg-panel border border-line rounded-sm px-4 py-3 text-bone placeholder:text-sage/50 focus:border-brass outline-none"
@@ -94,6 +95,7 @@ export default function Contact() {
               </label>
               <textarea
                 id="message"
+                name="message"
                 required
                 rows={4}
                 className="mt-2 w-full bg-panel border border-line rounded-sm px-4 py-3 text-bone placeholder:text-sage/50 focus:border-brass outline-none resize-none"
