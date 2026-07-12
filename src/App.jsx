@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import WhatsappButton from "./components/WhatsappButton";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <About />
         <Skills />
         <Contact />
+        <WhatsappButton />
       </main>
       <Footer />
     </div>
