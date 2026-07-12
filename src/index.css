@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #14181a;
+  --color-panel: #1c2320;
+  --color-panel-alt: #202821;
+  --color-brass: #c89b3c;
+  --color-brass-dim: #9c7b30;
+  --color-signal: #e4572e;
+  --color-bone: #edeae2;
+  --color-sage: #9aa39c;
+  --color-line: #343d37;
+
+  --font-display: "Oswald", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-bone);
+  font-family: var(--font-body);
+}
+
+.pegboard-bg {
+  background-image: radial-gradient(var(--color-line) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-ink);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 3px;
+}
